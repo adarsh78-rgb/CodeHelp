@@ -33,12 +33,12 @@ function App() {
   }
 
   async function reviewCode() {
-    const response = await axios.post("http://localhost:3000/ai/get-review", { code });
+    const response = await axios.post("https://codehelp-2.onrender.com/ai/get-review", { code });
     setReviw(response.data);
   }
 
   async function correctCode() {
-    const response = await axios.post("http://localhost:3000/ai/get-code", { code });
+    const response = await axios.post("https://codehelp-2.onrender.com/ai/get-code", { code });
     setReviw(response.data);
   }
 
